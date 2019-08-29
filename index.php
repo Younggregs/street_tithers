@@ -1,6 +1,8 @@
 <?php
  
-    $amount = $_GET['amount'];
+    
+    $amount = isset($_GET['amount']) ? $_GET['amount'] : 100;
+    
 
 ?>
 
