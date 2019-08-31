@@ -17,7 +17,7 @@
 
 <body>
   <script
-    src="https://www.paypal.com/sdk/js?client-id=AacnqJaEJbGudsWPeRUtGZDPh-vxEnYb4r3nyjFzTgN_ehl_k4wvt_M9MkKWkdp3h0zVCs_jJwS0TbXx">
+  src="https://www.paypal.com/sdk/js?client-id=AWZpDQR41Gd0P1EBFO0og79w9TobooSxCjwBzV6bpPX6EQSmCDE1LglFqpSdk2TlJ4J7J-U710JAaYUK">
   </script>
 
     <div id="paypal-button-container"></div>
