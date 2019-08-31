@@ -1,7 +1,7 @@
 <?php
  
     
-    $amount = isset($_GET['amount']) ? $_GET['amount'] : 100;
+    $amount = isset($_GET['amount']) ? $_GET['amount'] : 10;
     
 
 ?>
