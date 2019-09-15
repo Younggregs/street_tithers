@@ -1,60 +1,42 @@
-<?php
- 
-    
-    $amount = isset($_GET['amount']) ? $_GET['amount'] : 10;
-    
+<!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
 
-?>
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<button
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+  id="checkout-button-sku_Foj0S6H39NVi8F"
+  role="link"
+>
+  Checkout
+</button>
 
-<!DOCTYPE html>
-
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-</head>
-
-<body>
-  <script
-  src="https://www.paypal.com/sdk/js?client-id=AWZpDQR41Gd0P1EBFO0og79w9TobooSxCjwBzV6bpPX6EQSmCDE1LglFqpSdk2TlJ4J7J-U710JAaYUK">
-  </script>
-
-    <div id="paypal-button-container"></div>
-    
-
-
+<div id="error-message"></div>
 
 <script>
-  paypal.Buttons({
-    createOrder: function(data, actions) {
-      // Set up the transaction
-      return actions.order.create({
-        purchase_units: [{
-          amount: {
-            value: <?php echo '\''.$amount.'\''; ?>
-          }
-        }]
-      });
-    },
-    onApprove: function(data, actions) {
-      return actions.order.capture().then(function(details) {
-        alert('Transaction completed by ' + details.payer.name.given_name);
-        // Call your server to save the transaction
-        return fetch('/paypal-transaction-complete', {
-          method: 'post',
-          headers: {
-            'content-type': 'application/json'
-          },
-          body: JSON.stringify({
-            orderID: data.orderID
-          })
-        });
-      });
-    }
-  }).render('#paypal-button-container');
+  var stripe = Stripe('pk_test_WaGYGxnU5Mr8IOfkzZySWc0I00kB0brD27');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_Foj0S6H39NVi8F');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_Foj0S6H39NVi8F', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'http://street-tithers.herokuapp.com',
+      cancelUrl: 'http://street-tithers.herokuapp.com',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
 </script>
-
-
-</body>
-</html>
