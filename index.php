@@ -4,7 +4,7 @@
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
   $amount  = $_POST['amount'];
 }else{
-  $amount = 50000;
+  $amount = 1000;
 }
 
 ?>
