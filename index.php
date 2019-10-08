@@ -1,8 +1,8 @@
 <?php require_once('./config.php'); 
 
 
-if($_SERVER['REQUEST_METHOD'] === 'GET'){
-  $amount  = $_GET['amount'];
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+  $amount  = $_POST['amount'];
 }else{
   $amount = 1000;
 }
