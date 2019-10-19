@@ -17,7 +17,7 @@ h1 {
 
 .center {
   margin: auto;
-  width: 30%;
+  width: 50%;
   padding: 100px 0;
 }
 
@@ -35,17 +35,17 @@ h1 {
   padding: 5px;
   color: white;
   padding: 10px;
+  font-size: 25px;
   border: 3px solid orange;
 }
 
 </style>
 </head>
 <body>
-    
     <div class="center">
     <h1>Street Tithers</h1>
         <section class="support">
-            Contact us: street.tithers@gmail.com
+            Contact us: street.tithers@gmail.com <br />
             We'll love to hear from you!
         </section>
     </div>

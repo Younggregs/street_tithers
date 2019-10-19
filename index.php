@@ -29,11 +29,11 @@ body {
 
 .button-class {
   margin: auto;
-  height: 100px;
-  width: 300px;
+  height: 150px;
+  width: 400px;
   background-color: purple;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .about {
@@ -41,6 +41,10 @@ body {
   margin: 10px;
   padding: 5px;
   border: 3px solid purple;
+}
+
+a{
+  font-size: 30px;
 }
 
 </style>
