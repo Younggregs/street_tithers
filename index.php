@@ -54,7 +54,7 @@
 								<h1><a href="#home"><img src="img/st_icon.png" height="50px" width="70px" alt=""></a>Street Tithers</h1>
 							</div>
 							<div class="main-menubar d-flex align-items-center">
-								<nav class="hide">
+								<nav>
 									<a href="#home">Home</a>
 									<a href="#project">Projects</a>
 									<a href="#about">About</a>
@@ -89,8 +89,8 @@
 				<section class="callto-area relative">
 					<div class="container">
 						<div class="row d-flex callto-wrap justify-content-between pt-40 pb-40">
-							<h3 class="text-white">Please Help them and Donate now</h3>
-							<a href="#" class="head-btn head-btn2 btn text-uppercase">Donate Now</a>
+							<h3 class="text-white">Please Help and Donate now</h3>
+							<a href="#donate" class="head-btn head-btn2 btn text-uppercase">Donate Now</a>
 						</div>
 					</div>
 				</section>
@@ -104,7 +104,7 @@
 						<div class="col-md-8 pb-80 header-text">
 							<h1>Waiting for Help</h1>
 							<p>
-								Lend and hand am help somebody today, it doesn't matter how much, its all about the intention from the heart.
+								Lend a hand and help somebody today, it doesn't matter how much, its all about the intention from the heart.
 							</p>
 						</div>
 					</div>
@@ -112,17 +112,17 @@
 						<div class="col-lg-4 col-md-4 project-wrap">
 							<div class="single-project">
 								<div class="content">
-								    <a href="#" target="_blank">
+								    <a href="#donate" target="_blank">
 								      <div class="content-overlay"></div>
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img/p1.jpg" alt="">
 								      	<div class="content-details fadeIn-bottom">
-								      		<a href="#" class="head-btn btn text-uppercase">Donate Now</a>
+								      		<a href="#donate" class="head-btn btn text-uppercase">Donate Now</a>
 								      	</div>
 								    </a>
 								 </div>
 							</div>
 							<div class="details">
-								<a href="#"><h2>Lets Clothe someone</h2></a>
+								<a href="#donate"><h2>Let's Clothe someone</h2></a>
 						  		
 					
 							</div>
@@ -131,17 +131,17 @@
 						<div class="col-lg-4 col-md-4 project-wrap">
 							<div class="single-project">
 								<div class="content">
-								    <a href="#" target="_blank">
+								    <a href="#donate" target="_blank">
 								      <div class="content-overlay"></div>
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img/p2.jpg" alt="">
 								      	<div class="content-details fadeIn-bottom">
-								      		<a href="#" class="head-btn btn text-uppercase">Donate Now</a>
+								      		<a href="#donate" class="head-btn btn text-uppercase">Donate Now</a>
 								      	</div>
 								    </a>
 								 </div>
 							</div>
 							<div class="details">
-								<a href="#"><h2>Lets help the needy</h2></a>
+								<a href="#donate"><h2>Let's help the needy</h2></a>
 						  		
 						  		
 							</div>
@@ -149,17 +149,17 @@
 						<div class="col-lg-4 col-md-4 project-wrap">
 							<div class="single-project">
 								<div class="content">
-								    <a href="#" target="_blank">
+								    <a href="#donate" target="_blank">
 								      <div class="content-overlay"></div>
 								  		 <img class="content-image img-fluid d-block mx-auto" src="img/p3.jpg" alt="">
 								      	<div class="content-details fadeIn-bottom">
-								      		<a href="#" class="head-btn btn text-uppercase">Donate Now</a>
+								      		<a href="#donate" class="head-btn btn text-uppercase">Donate Now</a>
 								      	</div>
 								    </a>
 								 </div>
 							</div>
 							<div class="details">
-								<a href="#"><h2>Lets Feed someone</h2></a>
+								<a href="#donate"><h2>Let's Feed someone</h2></a>
 						  		
 							</div>
 						</div>
@@ -168,6 +168,31 @@
 				</div>
 			</section>
 			<!-- End project Area -->
+
+			<!-- Start Youtube Videos -->
+			<section>
+			<div class="row d-flex justify-content-end align-items-center">
+				<div class="col-lg-6 col-md-12 about-left no-padding">
+				<iframe width="560" 
+					height="315" 
+					src="https://www.youtube.com/embed/VfSMhEBon7Y" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			 	</iframe>
+				</div>
+				<div class="col-lg-6 col-md-12">
+					<h1>Videos of our <br>
+						exploits</h1>
+					<a href="https://www.youtube.com/channel/UCWcK4oMHeZjZpNuk9tKBz1A">
+						<button class="primary-btn mt-20 text-uppercase ">
+						Watch More Videos
+						<span class="lnr lnr-arrow-right"></span></button>
+					</a>
+				</div>
+					</div>
+			</section>
+			
+			<!-- End Youtube Videos -->
 
 			<!-- Start about Area -->
 			<section class="about-area" id="about">
@@ -195,7 +220,7 @@
         poverty in communities around the world. We provide a platform for you to reach out to the poor 
         and under privileged in the society through Tithing'.
 							</p>
-							<button class="primary-btn mt-20 text-uppercase ">learn more<span class="lnr lnr-arrow-right"></span></button>
+							<button class="primary-btn mt-20 text-uppercase "><a href="#donate">Donate</a><span class="lnr lnr-arrow-right"></span></button>
 						</div>
 					</div>
 				</div>
@@ -208,34 +233,12 @@
 				<div class="overlay overlay-bg"></div>
 				<div class="container">
 					<div class="row d-flex justify-content-end">
-						<div class="col-lg-6 col-sm-12 pb-80 header-text">
+						<div class="col-lg-12 col-sm-12 pb-80 header-text">
 							<h1>Donate Now</h1>
-							<p>
-							Lend a hand, help somebody today. It doesn't matter how much, its all about the intention from the heart.<br />Contact us: street.tithers@gmail.com
-							</p>
 						</div>
 					</div>
 					<div class="row d-flex justify-content-center">
-						<div class="col-lg-6 contact-left">
-							<div class="single-info">
-								<h4>Divided Evenly</h4>
-								<p>
-									Lets help you reach those in need.
-								</p>
-							</div>
-							<div class="single-info">
-								<h4>Transperancy All the Way</h4>
-								<p>
-									We show report of how we use the funds<br /> so everyone knows where thier contribution goes to
-								</p>
-							</div>
-							<div class="single-info">
-								<h4>Trustworthy</h4>
-								<p>
-									You can trust us to get the job done
-								</p>
-							</div>
-						</div>
+				
 						<div class="col-lg-6 contact-right">
 							<form class="booking-form" id="myForm" method="post" action="donate.php">
 								 	<div class="row">
@@ -280,8 +283,28 @@
 									</div>
 					  		</form>
 					  		<p class="payment-method">
-					  			We Accept :   <img src="img/payment.png" alt="">
+					  			We Accept :   <a href="#donate"><img src="img/stripe.png" width="400px" height="100px" alt=""></a>
 					  		</p>
+						</div>
+						<div class="col-lg-6 contact-left">
+							<div class="single-info">
+								<h4>Divided Evenly</h4>
+								<p>
+									Lets help you reach those in need.
+								</p>
+							</div>
+							<div class="single-info">
+								<h4>Transperancy All the Way</h4>
+								<p>
+									We show report of how we use the funds<br /> so everyone knows where thier contribution goes to
+								</p>
+							</div>
+							<div class="single-info">
+								<h4>Trustworthy</h4>
+								<p>
+									You can trust us to get the job done
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
