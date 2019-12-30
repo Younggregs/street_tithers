@@ -13,17 +13,21 @@ if($_GET){
 <html>
 <head>
 <style>
-
 body {
-  background-color: linen;
+  background-color: #3b5998;
   height: 100vh;
   align-items: center;
   justify-content: center;
+  display: flex;
+}
+
+a{
+  color: white;
 }
 
 .center {
   margin: auto;
-  width: 50%;
+  width: 20%;
   padding: 100px 0;
 }
 
@@ -34,6 +38,7 @@ body {
   background-color: purple;
   color: white;
   font-size: 30px;
+  border-radius: 10px;
 }
 
 .about {
