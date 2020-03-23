@@ -17,7 +17,7 @@
 	<html lang="zxx" class="no-js">
 	<head>
 		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 		<!-- Favicon-->
 		<link rel="shortcut icon" href="img/fav.png">
 		<!-- Author Meta -->
@@ -55,10 +55,10 @@
 							</div>
 							<div class="main-menubar d-flex align-items-center">
 								<nav>
-									<a href="#home">Home</a>
-									<a href="#project">Projects</a>
-									<a href="#about">About</a>
-									<a href="#donate">Donate</a>
+									<a href="#home" target='_top'>Home</a>
+									<a href="#project" target='_top'>Projects</a>
+									<a href="#about" target='_top'>About</a>
+									<a href="#donate" target='_top'>Donate</a>
 								</nav>
 								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
 							</div>
